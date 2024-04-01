@@ -1,14 +1,13 @@
-* {
-  /* border: 1px solid red; */
-  /* padding: 0;margin: 0; */
-}
-
 body {
   box-sizing: border-box;
- font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
- color: rgb(47, 47, 47);
+  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
+  color: rgb(47, 47, 47);
 }
-                                                     /* ----------- navbar logo styling ------------ */
+*{
+  /* border: 2px solid blue; */
+}
+
+/* ----------- navbar logo styling ------------ */
 #nav-logo {
   display: flex;
   justify-content: space-between;
@@ -18,7 +17,7 @@ body {
   margin: 5px auto auto auto;
 }
 
-#nav-logo ul li {
+ul li {
   list-style-type: none;
   display: inline-block;
 }
@@ -33,17 +32,23 @@ body {
 .logo-section p {
   font-size: 0.8em;
   text-align: left;
-  border: 1px solid blue;
   margin-top: 7px;
 }
+
 .divider {
   width: 1px;
   height: 100%;
-  background-color: #2e5655;
+  background-color: #10847e;
 }
 
 .login-section {
   width: 40%;
+}
+
+.login-section li a {
+  color: black;
+  border: none;
+  background-color: transparent;
 }
 
 .login-section > ul {
@@ -54,7 +59,7 @@ body {
   align-content: center;
 }
 
-#margin-left {
+.margin-left {
   margin: 3px;
 }
 
@@ -74,30 +79,219 @@ body {
   font-size: 1.2em;
 }
 
-
-
-
-
-                                                    /* ------------ navbar logo styling ------------ */
+/* ------------ navbar logo styling ------------ */
 
 #nav-category {
   width: 100%;
   height: 40px;
   border: 1px solid lightgrey;
- 
 }
 
 #nav-category ul {
-    display: flex;
-    width: 45%;
-    height: 90%;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    text-align: left;
-
+  display: flex;
+  width: 45%;
+  height: 90%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
 }
-#nav-category ul li i{
-    font-size: 0.6em;
-    
+#nav-category ul li i {
+  font-size: 0.6em;
+}
+
+ul li:hover {
+  color: #10847e;
+  font-weight: 500;
+}
+
+.prescript {
+  /* border: 1px solid red; */
+  width: 60%;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexend {
+  align-self: flex-end;
+}
+.flexend span {
+  color: #10847e;
+  font-size: 0.9em;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.flexend span i {
+  font-size: 0.8em;
+  margin-left: 5px;
+}
+.prescript p .margin-left {
+  margin-right: 5px;
+  font-size: 1.2em;
+  align-self: flex-end;
+}
+.flexstart {
+  align-self: center;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: rgb(34, 32, 32);
+}
+.search {
+  width: 60%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3px 10px 10px;
+  border: 1px solid darkgrey;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.search input {
+  width: 85%;
+  height: 100%;
+  border: none;
+}
+.search i {
+  font-size: 30px;
+  text-align: center;
+  color: grey;
+  font-weight: 600;
+}
+
+.search button {
+  background-color: #10847e;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 43px;
+  left: 0;
+}
+
+.search input::placeholder {
+  color: grey;
+  text-align: left;
+}
+
+/* Medicine Category Styling */
+
+#main {
+  width: 90%;
+  margin: auto;
+}
+
+#category {
+  width: 80%;
+  /* height: 120px; */
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 80%;
+  /* border: 1px solid green; */
+  margin: auto;
+  border-bottom: 1px solid lightgray;
+}
+
+.card {
+  width: 12%;
+  font-size: 0.8em;
+  justify-content: left;
+  padding: 5px;
+  /* border: 2px solid red;
+   */
+}
+.card span {
+  color: tomato;
+}
+.card p,
+.card span {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.card p {
+  margin-top: 3px;
+}
+
+.sliders {
+  /* display: grid; */
+  /* grid-template-columns: repeat(3,1fr);
+  grid-template-row: 200px ; */
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sliders img {
+  width: 33%;
+}
+.lab-test {
+  margin-top: 30px;
+  font-size: 30px;
+}
+.thyrocare-logo img {
+  height: 25px;
+  color: rgb(32, 31, 31);
+}
+
+                                                   /* slider */
+
+.slider-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* border: 2px solid red; */
+  width: 100%; 
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slider-item {
+  flex: 0 0 180px; 
+  max-width: 25%; 
+  padding: 0 10px; 
+  height: 186px;
+  /* border: 2px solid red; */
+  box-sizing: border-box;
+}
+
+.slider-item img {
+ width: 100%;
+  display: block;
+}
+
+.prev-btn,
+.next-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 2;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
 }
