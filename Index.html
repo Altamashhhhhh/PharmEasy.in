@@ -197,29 +197,61 @@
                             src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/9696ef00b0a-lifestyle.png?dim=256x0"
                             alt="Lifestyle"></a>
                 </div>
-                
+
             </div>
             <div class="prev-btn" onclick="moveSlider(-1)">&#10094;</div>
             <div class="next-btn" onclick="moveSlider(1)">&#10095;</div>
         </div>
 
 
+        <div class="owp">
+            <!-- owp stand for  order with prescription -->
+
+            <div class="owp-div">
+                <div class="owp1st">
+                    <img src="https://assets.pharmeasy.in/apothecary/images/rx_upload.svg?dim=1440x0" alt="">
+                    <div>
+                        <div>
+                            <h3>Order With Prescription</h3>
+                            <p>Upload prescription and we will deliver your medicines</p>
+                            <button class="upload"><i class="fa-solid fa-paperclip "></i> Upload</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="owp2nd">
+                    <p>How does this work?</p>
+                    <div class="owp2nd-in">
+                        <div><span>1</span>
+                            Upload a photo of your prescription</div>
+                        <div><span>3</span><span>We will call you to confirm the medicines</span></div>
+                        <div><span>2</span><span>Add delivery address and place the order</span></div>
+                        <div><span>4</span> <span>Now, sit back! your medicines will get delivered at your
+                                doorstep</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
 
-        <script>
-            let sliderIndex = 0;
 
-            function moveSlider(direction) {
-                const slides = document.querySelectorAll('.slider-item');
-                const totalSlides = slides.length;
-                const sliderWidth = slides[0].offsetWidth;
-                sliderIndex = (sliderIndex + direction + totalSlides) % totalSlides;
-                const movement = -sliderIndex * sliderWidth;
-                document.querySelector('.slider').style.transform = `translateX(${movement}px)`;
-            }
-        </script>
+
     </div>
+    <script>
+        let sliderIndex = 0;
+
+        function moveSlider(direction) {
+            const slides = document.querySelectorAll('.slider-item');
+            const totalSlides = slides.length;
+            const sliderWidth = slides[0].offsetWidth;
+            sliderIndex = (sliderIndex + direction + totalSlides) % totalSlides;
+            const movement = -sliderIndex * sliderWidth;
+            document.querySelector('.slider').style.transform = `translateX(${movement}px)`;
+        }
+    </script>
+
+
 </body>
 
 </html>
