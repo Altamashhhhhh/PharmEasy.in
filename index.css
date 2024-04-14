@@ -225,18 +225,22 @@ ul li:hover {
   margin-top: 3px;
 }
 
-.sliders {
-  /* display: grid; */
-  /* grid-template-columns: repeat(3,1fr);
-  grid-template-row: 200px ; */
-
+.img-sliders {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  overflow: visible;
+  white-space: nowrap;
 }
-.sliders img {
+
+.img-slide {
+  display: inline-block;
   width: 33%;
+  /* border: 2px solid red; */
 }
+
+.sliders {
+  transition: transform 0.5s ease;
+}
+
 .lab-test {
   margin-top: 30px;
   font-size: 30px;
@@ -351,4 +355,33 @@ ul li:hover {
   background-color: #10847e;
   color: white;
   border-radius: px;
+}
+                                           /* Shop By Category Section */
+
+
+.slider-containers {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliders {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.slider-items {
+  flex: 0 0 180px;
+  max-width: 25%;
+  padding: 0 10px;
+  height: 186px;
+  box-sizing: border-box;
+}
+
+.slider-items img {
+  width: 100%;
+  display: block;
 }

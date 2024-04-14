@@ -125,11 +125,13 @@
         </div>
 
 
-        <div class="sliders">
-            <img src="https://cdn01.pharmeasy.in/dam/banner/banner/35e5eacb98d-27OFFER.jpg" alt="">
-            <img src="https://cdn01.pharmeasy.in/dam/banner/banner/96173370bef-BOGO_pe.jpg" alt="">
-            <img src="https://cdn01.pharmeasy.in/dam/banner/banner/6daa13c2968-Slipper-HP-size.jpg" alt="">
+        <div class="img-sliders ">
+            <img class="img-slide" src="https://cdn01.pharmeasy.in/dam/banner/banner/35e5eacb98d-27OFFER.jpg" alt="">
+            <img class="img-slide" src="https://cdn01.pharmeasy.in/dam/banner/banner/96173370bef-BOGO_pe.jpg" alt="">
+            <img class="img-slide" src="https://cdn01.pharmeasy.in/dam/banner/banner/6daa13c2968-Slipper-HP-size.jpg"
+                alt="">
         </div>
+
 
         <h1 class="lab-test">
             Lab Tests By Health Concern
@@ -233,22 +235,28 @@
 
         </div>
 
+        <h2 style="margin: 50px 0; " id="shopCategory">Shop by Categories</h2>
+
+        <div class="slider-containers slider-container">
+            <div class="shopCategory sliders slider">
+                
+            </div>
+            <div class="prev-btns prev-btn" onclick="moveSliders(-1)">&#10094;</div>
+                <div class="next-btns next-btn" onclick="moveSliders(1)">&#10095;</div>
+        </div>
+
+
+
+       
+
+
 
 
 
 
     </div>
-    <script>
-        let sliderIndex = 0;
 
-        function moveSlider(direction) {
-            const slides = document.querySelectorAll('.slider-item');
-            const totalSlides = slides.length;
-            const sliderWidth = slides[0].offsetWidth;
-            sliderIndex = (sliderIndex + direction + totalSlides) % totalSlides;
-            const movement = -sliderIndex * sliderWidth;
-            document.querySelector('.slider').style.transform = `translateX(${movement}px)`;
-        }
+    <script src="index.js">
     </script>
 
 
