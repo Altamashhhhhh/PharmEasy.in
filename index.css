@@ -187,7 +187,6 @@ ul li:hover {
 
 #category {
   width: 80%;
-  /* height: 120px; */
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
@@ -196,7 +195,6 @@ ul li:hover {
 
 .card img {
   width: 80%;
-  /* border: 1px solid green; */
   margin: auto;
   border-bottom: 1px solid lightgray;
 }
@@ -206,7 +204,6 @@ ul li:hover {
   font-size: 0.8em;
   justify-content: left;
   padding: 5px;
-  /* border: 2px solid red;
    */
 }
 .card span {
@@ -234,7 +231,6 @@ ul li:hover {
 .img-slide {
   display: inline-block;
   width: 33%;
-  /* border: 2px solid red; */
 }
 
 .sliders {
@@ -255,7 +251,6 @@ ul li:hover {
 .slider-container {
   margin-top: 40px;
   margin-bottom: 40px;
-  /* border: 2px solid red; */
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -271,7 +266,6 @@ ul li:hover {
   max-width: 25%;
   padding: 0 10px;
   height: 186px;
-  /* border: 2px solid red; */
   box-sizing: border-box;
 }
 
